@@ -2,11 +2,20 @@
 
 <table>
     <tr>
-        <th>Zadanie</th>
+        <th>ID</th>
+        <th>Zadane</th>
+        <th>Priorytet</th>
     </tr>
-    
-        <tr>Cięcie materiału</tr>
-        <tr>Wstępny trailer</tr>
-        <tr>Montaż</tr>
+
+    <tr *ngFor="let task of getTasks()">
+
+        <td>{{task.id}}</td>
+        <td>{{task.name}}</td>
+        <td>{{task.priority}}</td>
+        <td>
+            <button (click)="deleteTask(task)">Usuń zadanie</button>
+        </td>
+
+    </tr>
     
 </table>

@@ -1,8 +1,25 @@
-h1{
-    color:#a02c2c;
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-table{
-    text-align: center;
-    font-size: 22px;
+th{
+    background:#0f2a41;
+    color: #ffffff;
+    padding: 5px;
+    width: 200px;
+}
+
+td{
+    background: #0f2a41bd;
+    color:#ffffff;
+}
+
+button{
+    color:#ffffff;
+    width: 90px;
+    height: 50px;
+    background-color: #186600;
+    margin: 5px;
 }
